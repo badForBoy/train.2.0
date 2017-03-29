@@ -42,6 +42,7 @@ ul{
 li{
     list-style: none;
 }
+.h1, .h2, .h3, h1, h2, h3{margin-top: 0;}
 
 
 .blue{
@@ -302,6 +303,7 @@ a.search-btn{
 }
 
 /*header-nav*/
+.modal-nav{display: none;}
 .header-nav{
     background: #188eee;
 }
@@ -504,7 +506,7 @@ a.search-btn{
 /*********************
     友情链接
 *********************/
-.wrap-friend{
+.footer{
     position: absolute;
     bottom: 0;
     margin-top: 50px;
@@ -514,61 +516,14 @@ a.search-btn{
     padding: 40px 0;
 }
 .modal-friend-icon{
-    /*position: absolute;*/
+    position: absolute;
     background: url(../img/solid.png) no-repeat;
     width: 100px;
     height: 67px;
     margin: 20px auto 10px;
     padding-top: 20px;
 }
-.modal-friend-information{
+.footer .title{
     text-align: center;
     color: #666;
 }
-
-
-
-@media (max-width: 768px) { 
-    #head1{
-        display: none;
-    }
-    #head2{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        height: 100px;
-        z-index: 99;
-        background: #eee;
-        border-bottom: 1px solid #ddd;
-    }
-    .head2-logo{
-        width: 100%;
-    }
-    .head2-logo img {
-        width: 50%;
-        padding-top: 10px;
-    }
-    #head2 .btn{
-        display: block !important;
-    }
-    .head2-seach{
-        display: none;
-    }
-    .head2-logo,
-    #head2 .contain,
-    #head2{
-        height: 70px;
-    }
-    .head2-logo{
-        padding-right: 0;
-    }
-    .nav-banner,.header-nav{
-        display: none;
-    }
-    a.head2-link-logo{
-        width: 217px !important;
-    }
-
-} 
