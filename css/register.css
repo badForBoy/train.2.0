@@ -1,0 +1,22 @@
+body,html{height: 100%;}
+.col-sm-8{width: 66.66666666%;float: left;}
+
+body{background: #edecea;}
+.help-block{display: block;}
+
+.header{height: 110px;width: 100%;background: #fff;border-bottom: 1px solid #ddd;}
+.header .logo{width: 60%;float: left;}
+.header .logo a{display: block;background: url(../img/logo.png) no-repeat;width: 297px;height: 81px;}
+.header .wellcome{float: right;line-height: 110px;}
+
+.main .wrap{padding: 0 120px;}
+.main .wrap .nav{margin-bottom: 25px;}
+.main .wrap .nav ul li{float: left;margin-right: 2px;background: #edecea;text-align: center;height: 42px;line-height: 42px;padding: 0 45px;color: #188eee;cursor: default;font-size: 16px;font-weight: 600;}
+.main .wrap .nav ul li.on{color: #fff;background: #188eee;}
+.main .wrap h3{text-align: center;margin: 40px;}
+.main .wrap .box-company .form-group.file{height: 34px;width: 100%;}
+.main .wrap .box-company .form-group{width: 100%;} 
+
+
+
+.footer{height: 115px;width: 100%;background: #fff;text-align: center;padding-top: 45px;}

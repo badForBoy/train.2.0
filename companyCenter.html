@@ -6,11 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="format-detection" content="telephone=no,email=no"/>
-	<title>唐石科技-个人中心</title>
+	<title>唐石科技-机构中心</title>
 	<link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
 	<link rel="stylesheet" href="iconFont/iconfont.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/center.css">
 </head>
 <body>
@@ -516,14 +517,17 @@
 		<div class="container">
 			<div class="nav tab-nav">
 				<ul>
-					<li class="on" class="clearfix"><span></span><i class="color" href="">课程表</i></li>
-					<li class="clearfix"><span></span><i href="">全部订单</i></li>
-					<li class="clearfix"><span></span><i href="">我的收藏</i></li>
-					<li class="clearfix"><span></span><i href="">优惠券</i></li>
-					<li class="clearfix"><span></span><i href="">我的余额</i></li>
+					<li class="on" class="clearfix"><span></span><i class="color" href="">我的课程</i></li>
+					<li class="clearfix"><span></span><i href="">待审课程</i></li>
+					<li class="clearfix"><span></span><i href="">我的订单</i></li>
+					<li class="clearfix"><span></span><i href="">预约订单</i></li>
+					<li class="clearfix"><span></span><i href="">我的钱包</i></li>
 					<li class="clearfix"><span></span><i href="">我的消息</i></li>
-					<li class="clearfix"><span></span><i href="">学团</i></li>
-					<li class="clearfix"><span></span><i href="">联系方式</i></li>
+					<li class="clearfix"><span></span><i href="">收藏</i></li>
+					<li class="clearfix"><span></span><i href="">优惠券</i></li>
+					<li class="clearfix"><span></span><i href="">添加课程</i></li>
+					<li class="clearfix"><span></span><i href="">教师管理</i></li>
+					<li class="clearfix"><span></span><i href="">添加教师</i></li>
 					<li class="clearfix"><span></span><i href="">账户管理</i></li>
 				</ul>
 			</div>
@@ -1347,9 +1351,11 @@
 						    				</a>
 						    			</div>
 						    			<div class="title">
-						    				<p><a href="curseDetail.html">不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量</a></p>
-						    				<p><span>C语言基础</span>|<a href="company.html">年度教育课堂</a></p>
-						    				<p class="money">68.00元</p>
+						    				<div class="box-title">
+						    					<p><a href="curseDetail.html">不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量</a></p>
+							    				<p><span>C语言基础</span>|<a href="company.html">年度教育课堂</a></p>
+							    				<p class="money">68.00元</p>
+						    				</div>
 						    			</div>
 						    		</div>
 						    		<div class="status">
@@ -1369,9 +1375,11 @@
 						    				</a>
 						    			</div>
 						    			<div class="title">
-						    				<p><a href="curseDetail.html">不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量</a></p>
-						    				<p><span>C语言基础</span>|<a href="company.html">年度教育课堂</a></p>
-						    				<p class="free">免费</p>
+						    				<div class="box-title">
+						    					<p><a href="curseDetail.html">不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量</a></p>
+							    				<p><span>C语言基础</span>|<a href="company.html">年度教育课堂</a></p>
+							    				<p class="money">68.00元</p>
+						    				</div>
 						    			</div>
 						    		</div>
 						    		<div class="status">
@@ -1390,9 +1398,11 @@
 						    				</a>
 						    			</div>
 						    			<div class="title">
-						    				<p><a href="curseDetail.html">不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量</a></p>
-						    				<p><span>C语言基础</span>|<a href="company.html">年度教育课堂</a></p>
-						    				<p class="free">免费</p>
+						    				<div class="box-title">
+						    					<p><a href="curseDetail.html">不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量不要小看鸡蛋的力量</a></p>
+							    				<p><span>C语言基础</span>|<a href="company.html">年度教育课堂</a></p>
+							    				<p class="money">68.00元</p>
+						    				</div>
 						    			</div>
 						    		</div>
 						    		<div class="status">
@@ -1773,7 +1783,336 @@
 						<!-- 添加手机之后 end -->
 					</div>
 				</div>
+				<div class="item add-course tab-item hide">
+					<div class="wrap">
+						<div class="header">
+							<h2>添加课程</h2>
+						</div>
+						<div class="box">
+							<form class="form-horizontal">
+								<div class="form-group clearfix">
+									<div class="row clearfix">
+										<label for="" class="col-sm-2 control-label">课程分类:</label>
+										<div class="col-xs-3">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+										<div class="col-xs-3">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+										<div class="col-xs-3">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">姓名:</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="" placeholder="教师姓名">
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="row">
+										<label for="" class="col-sm-2 control-label">性别:</label>
+										<div class="col-xs-10">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">价格:</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="" placeholder="课程价格">
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">市场价格:</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="" placeholder="市场价格">
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="row">
+										<label for="" class="col-sm-2 control-label">上课地点:</label>
+										<div class="col-xs-3">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+										<div class="col-xs-3">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+										<div class="col-xs-3">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">详细地址:</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="详细地址"></textarea>
+										<span id="helpBlock2" class="help-block">120/120</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="row">
+										<label for="" class="col-sm-2 control-label">课程时间:</label>
+										<div class="col-xs-4">
+											<input type="date" class="form-control" id="">
+										</div>
+										<div class="date">
+											<span>--</span>
+										</div>
+										<div class="col-xs-4">
+											<input type="date" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="row">
+										<label for="" class="col-sm-2 control-label">学时:</label>
+										<div class="col-xs-10">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">上传封面:</label>
+									<div class="col-sm-10">
+										<input type="file" class="form-control" id="" placeholder="上传封面">
+										<span id="helpBlock2" class="help-block">请上传600*340的封面图片</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">图文图片:</label>
+									<div class="col-sm-10">
+										<input type="file" class="form-control" id="" placeholder="图文图片">
+										<span id="helpBlock2" class="help-block">请上传宽度为820px的详情图片</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="col-sm-offset-2 col-sm-10">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox">我已同意<a href="">《唐石管理条例》</a>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-primary">提交</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 				<div class="item manage tab-item hide">
+					<div class="wrap">
+						<div class="header">
+							<h2>老师管理</h2>
+						</div>
+						<div class="list">
+							<div class="list-header">
+								<span class="course">老师信息</span>
+								<span class="status">状态</span>
+								<span class="operations">操作</span>
+							</div>
+							<ul>
+								<li class="clearfix">
+									<div class="clearfix course">
+						    			<div class="pic">
+						    				<a href="curseDetail.html">
+						    					<img src="img/company/teacher_1.jpg">
+						    				</a>
+						    			</div>
+						    			<div class="title">
+						    				<div class="box-title">
+						    					<p>姓名：<span>张老师</span></p>
+							    				<dl>
+							    					<dt>课程安排：</dt>
+							    					<dd><a href="courseDetails.html">《不要小看鸡蛋的力量》</a><a href="courseDetails.html">《不要小看鸡蛋的力量》</a><a href="courseDetails.html">《不要小看鸡蛋的力量》</a><a href="courseDetails.html">《不要小看鸡蛋的力量》</a><a href="courseDetails.html">《不要小看鸡蛋的力量》</a></dd>
+							    				</dl>
+						    				</div>
+						    			</div>
+						    		</div>
+						    		<div class="status">
+						    			<p class="money">开课中</p>
+						    		</div>
+						    		<div class="operation">
+						    			<a href="">编辑</a>
+						    		</div>
+								</li>
+								<li class="clearfix">
+									<div class="clearfix course">
+						    			<div class="pic">
+						    				<a href="curseDetail.html">
+						    					<img src="img/company/teacher_2.jpg">
+						    				</a>
+						    			</div>
+						    			<div class="title">
+						    				<div class="box-title">
+						    					<p>姓名：<span>张老师</span></p>
+							    				<dl>
+							    					<dt>课程安排：</dt>
+							    					<dd><a href="courseDetails.html">不要小看鸡蛋的力量</a><a href="courseDetails.html">不要小看鸡蛋的力量</a><a href="courseDetails.html">不要小看鸡蛋的力量</a><a href="courseDetails.html">不要小看鸡蛋的力量</a><a href="courseDetails.html">不要小看鸡蛋的力量</a></dd>
+							    				</dl>
+						    				</div>
+						    			</div>
+						    		</div>
+						    		<div class="status">
+						    			<p class="free">未开课</p>
+						    		</div>
+						    		<div class="operation">
+						    			<a href="">编辑</a>
+						    		</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="item manage tab-item hide">
+					<div class="wrap">
+						<div class="header">
+							<h2>添加教师</h2>
+						</div>
+						<div class="box">
+							<form class="form-horizontal">
+								<div class="form-group clearfix">
+									<div class="row">
+										<label for="" class="col-sm-2 control-label">课程安排:</label>
+										<div class="col-xs-10">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">姓名:</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="" placeholder="教师姓名">
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="row">
+										<label for="" class="col-sm-2 control-label">性别:</label>
+										<div class="col-xs-10">
+											<span class="standard_select">
+												<span class="select_shelter">
+													<select id="">
+														<option value="">1</option>
+														<option value="">2</option>
+													</select>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">邮箱:</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="" placeholder="请输入邮箱地址">
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">电话号码:</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="" placeholder="请输入电话号码">
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">老师介绍:</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="详细地址"></textarea>
+										<span id="helpBlock2" class="help-block">120/120</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="" class="col-sm-2 control-label">头像:</label>
+									<div class="col-sm-10">
+										<input type="file" class="form-control" id="" placeholder="头像">
+										<span id="helpBlock2" class="help-block">请上传260*340的封面图片</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="col-sm-offset-2 col-sm-10">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox">我已同意<a href="">《唐石管理条例》</a>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-primary">提交</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="item company manage tab-item hide">
 					<div class="wrap">
 						<div class="header">
 							<h2>账户管理</h2>
@@ -1797,58 +2136,152 @@
 												<span class="pull-left">账号设置</span><i class="iconfont pull-right">&#xe604;</i>
 											</div>
 											<form class="form-horizontal">
-											    <div class="form-group clearfix">
-											        <label for="" class="col-sm-2 control-label">用户昵称：</label>
-												    <div class="col-sm-10">
-												        <input type="text" class="form-control" id="" placeholder="请输入你的昵称">
-												    </div>
-											    </div>
-											    <div class="form-group clearfix">
-											        <label for="" class="col-sm-2 control-label">手机号码：</label>
-												    <div class="col-sm-10">
-												        <input type="text" class="form-control" id="" placeholder="请输入你的昵称">
-												    </div>
-											    </div>
-											    <div class="form-group clearfix">
-											        <label for="" class="col-sm-2 control-label">邮箱地址：</label>
-												    <div class="col-sm-10">
-												        <input type="text" class="form-control" id="" placeholder="请输入你的昵称">
-												    </div>
-											    </div>
-											    <div class="form-group clearfix">
-											    	<label for="" class="col-sm-2 control-label">性别选择：</label>
-											    	<div class="col-sm-10">
-														<span class="standard_select">
-															<span class="select_shelter">
-															<select id="">
-																<option value="">1</option>
-																<option value="">2</option>
-															</select>
-															</span>
-														</span>
+												<div class="form-group clearfix">
+													<label for="" class="col-sm-2 control-label">机构名称:</label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control" id="" placeholder="教师姓名">
 													</div>
 												</div>
-											    <div class="form-group clearfix">
-											        <label for="" class="col-sm-2 control-label">上传头像：</label>
-												    <div class="col-sm-10">
-												        <input type="file" id="exampleInputFile">
-										    			<p class="help-block">请上传160px*160px尺寸的图片</p>
-												    </div>
-											    </div>
-											    <div class="form-group">
-												    <div class="col-sm-offset-2 col-sm-10">
-												      	<div class="checkbox">
-												        	<label>
-												         		<input type="checkbox">我同意<a href="">《唐石管理条约》</a>
-												        	</label>
-												      	</div>
-												    </div>
+												<div class="form-group clearfix">
+													<div class="row clearfix">
+														<label for="" class="col-sm-2 control-label">主营业务:</label>
+														<div class="col-xs-3">
+															<span class="standard_select">
+																<span class="select_shelter">
+																	<select id="">
+																		<option value="">1</option>
+																		<option value="">2</option>
+																	</select>
+																</span>
+															</span>
+														</div>
+														<div class="col-xs-3">
+															<span class="standard_select">
+																<span class="select_shelter">
+																	<select id="">
+																		<option value="">1</option>
+																		<option value="">2</option>
+																	</select>
+																</span>
+															</span>
+														</div>
+														<div class="col-xs-3">
+															<span class="standard_select">
+																<span class="select_shelter">
+																	<select id="">
+																		<option value="">1</option>
+																		<option value="">2</option>
+																	</select>
+																</span>
+															</span>
+														</div>
+													</div>
 												</div>
-											    <div class="form-group clearfix">
-												    <div class="col-sm-offset-2 col-sm-10">
-												        <button type="submit" class="btn btn-primary">保存</button>
-												    </div>
-												 </div>
+												<div class="form-group clearfix">
+													<div class="row clearfix">
+														<label for="" class="col-sm-2 control-label">上课地点:</label>
+														<div class="col-xs-3">
+															<span class="standard_select">
+																<span class="select_shelter">
+																	<select id="">
+																		<option value="">1</option>
+																		<option value="">2</option>
+																	</select>
+																</span>
+															</span>
+														</div>
+														<div class="col-xs-3">
+															<span class="standard_select">
+																<span class="select_shelter">
+																	<select id="">
+																		<option value="">1</option>
+																		<option value="">2</option>
+																	</select>
+																</span>
+															</span>
+														</div>
+														<div class="col-xs-3">
+															<span class="standard_select">
+																<span class="select_shelter">
+																	<select id="">
+																		<option value="">1</option>
+																		<option value="">2</option>
+																	</select>
+																</span>
+															</span>
+														</div>
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<div class="row">
+														<label for="" class="col-sm-2 control-label">地址详情:</label>
+														<div class="col-xs-3">
+															<span class="standard_select">
+																<span class="select_shelter">
+																	<select id="">
+																		<option value="">1</option>
+																		<option value="">2</option>
+																	</select>
+																</span>
+															</span>
+														</div>
+														<div class="col-xs-3">
+															<span class="standard_select">
+																<span class="select_shelter">
+																	<select id="">
+																		<option value="">1</option>
+																		<option value="">2</option>
+																	</select>
+																</span>
+															</span>
+														</div>
+														<div class="col-xs-3">
+															<span class="standard_select">
+																<span class="select_shelter">
+																	<select id="">
+																		<option value="">1</option>
+																		<option value="">2</option>
+																	</select>
+																</span>
+															</span>
+														</div>
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<label for="" class="col-sm-2 control-label">机构简介:</label>
+													<div class="col-sm-10">
+														<textarea class="form-control" name="" id="" cols="30" rows="3" placeholder="机构简介"></textarea>
+														<span id="helpBlock2" class="help-block">120/120</span>
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<label for="" class="col-sm-2 control-label">发展历程:</label>
+													<div class="col-sm-10">
+														<textarea class="form-control" name="" id="" cols="30" rows="3" placeholder="发展历程"></textarea>
+														<span id="helpBlock2" class="help-block">120/120</span>
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<label for="" class="col-sm-2 control-label">公司LOGO:</label>
+													<div class="col-sm-10">
+														<input type="file" class="form-control" id="" placeholder="公司LOGO">
+														<span id="helpBlock2" class="help-block">请上传160*160的封面图片</span>
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<div class="col-sm-offset-2 col-sm-10">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox">我已同意<a href="">《唐石管理条例》</a>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<div class="col-sm-offset-2 col-sm-10">
+														<button type="submit" class="btn btn-primary">提交</button>
+													</div>
+												</div>
 											</form>
 										</div>
 										<div class="modal-bg"></div>
@@ -1889,7 +2322,7 @@
 												        <input type="password" class="form-control" id="" placeholder="再次输入新密码">
 												    </div>
 											    </div>
-											    <div class="form-group">
+											    <div class="form-group clearfix">
 												    <div class="col-sm-offset-2 col-sm-10">
 												      	<div class="checkbox">
 												        	<label>
@@ -1910,53 +2343,6 @@
 								</li>
 							</ul>
 						</div>
-						<!-- <div class="box-form">
-							<form class="form-horizontal">
-							    <div class="form-group clearfix">
-							        <label for="" class="col-sm-2 control-label">用户昵称：</label>
-								    <div class="col-sm-10">
-								        <input type="text" class="form-control" id="" placeholder="请输入你的昵称">
-								    </div>
-							    </div>
-							    <div class="form-group clearfix">
-							    	<label for="" class="col-sm-2 control-label">性别选择：</label>
-							    	<div class="col-sm-10">
-										<span class="standard_select">边框
-											<span class="select_shelter">遮挡默认边框
-											<select id="">
-												<option value="">1</option>
-												<option value="">2</option>
-											</select>
-											</span>
-										</span>
-										<select name="" id="selId"></select>
-										<select name="" id="idcat"></select>
-										<select name="" id="job"></select>
-									</div>
-								</div>
-							    <div class="form-group clearfix">
-							        <label for="" class="col-sm-2 control-label">上传头像：</label>
-								    <div class="col-sm-10">
-								        <input type="file" id="exampleInputFile">
-						    									<p class="help-block">请上传160px*160px尺寸的图片</p>
-								    </div>
-							    </div>
-							    <div class="form-group">
-								    <div class="col-sm-offset-2 col-sm-10">
-								      	<div class="checkbox">
-								        	<label>
-								         		<input type="checkbox">我同意<a href="">《唐石管理条约》</a>
-								        	</label>
-								      	</div>
-								    </div>
-								</div>
-							    <div class="form-group clearfix">
-								    <div class="col-sm-offset-2 col-sm-10">
-								        <button type="submit" class="btn btn-primary">保存</button>
-								    </div>
-								 </div>
-							</form>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -1978,7 +2364,6 @@
 
 
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<!-- <script type="text/javascript" src="js/tab.js"></script> -->
 <script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript" src="js/center.js"></script>
 </body>
