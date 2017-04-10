@@ -1,4 +1,4 @@
- body,html{background: #edecea;} 
+ body,html{background: #edecea;height: 100%;overflow: hidden;} 
 .form-horizontal .form-group{margin-left: 0;margin-right: 0;}
 .form-control{padding: 24px 12px;*padding: 3px 0;padding: 20px 0\0;}
 .btn-primary{width: 100%;height: 44px;font-size: 16px;}
@@ -11,7 +11,7 @@
 .header .wellcome{float: right;line-height: 110px;}
 
 
-.main{background: #edecea;min-height: 550px;margin: 110px 0 115px 0;}
+.main{background: #edecea;min-height: 550px;margin: 110px 0 115px 0;*margin-top: 160px;}
 .main .container{background: url(../img/login.jpg) no-repeat;height: 550px;}
 .main .wrap{width: 400px;float: right;background: #fff;margin-top: 15%;border-radius: 8px;}
 .main .wrap .box-login{padding:15px 15px; }
