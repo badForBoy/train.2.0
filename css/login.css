@@ -1,17 +1,17 @@
- body,html{height: 100%;} 
+ body,html{background: #edecea;} 
 .form-horizontal .form-group{margin-left: 0;margin-right: 0;}
 
 
 
-.header{height: 110px;width: 100%;background: #fff;}
+.header{position: absolute;top: 0;height: 110px;width: 100%;background: #fff;border-bottom: 1px solid #ddd;}
 .header .logo{width: 60%;float: left;}
 .header .logo a{display: block;background: url(../img/logo.png) no-repeat;width: 297px;height: 81px;}
 .header .wellcome{float: right;line-height: 110px;}
 
 
-.main{background: #edecea;min-height: 550px;padding-bottom: 60px;}
+.main{background: #edecea;min-height: 550px;margin: 110px 0 115px 0;}
 .main .container{background: url(../img/login.jpg) no-repeat;height: 550px;}
-.main .wrap{width: 400px;float: right;background: #fff;margin-top: 10%;border-radius: 8px;}
+.main .wrap{width: 400px;float: right;background: #fff;margin-top: 15%;border-radius: 8px;}
 .main .wrap .box-login{padding:15px 15px; }
 .main .wrap h3{color: #4871bf;font-size: 16px;font-weight: 600;margin: 20px 15px;}
 .main .wrap .more{*padding-bottom: 15px;padding-bottom: 15px\0;}
@@ -19,4 +19,4 @@
 .main .wrap .other{float: right;}
 
 
-.footer{position: absolute;bottom: 0;margin-top: 115px;height: 115px;width: 100%;background: #fff;text-align: center;padding-top: 45px;}
+.footer{position: absolute;bottom: 0;height: 115px;width: 100%;background: #fff;text-align: center;padding-top: 45px;}
