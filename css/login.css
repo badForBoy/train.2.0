@@ -5,13 +5,13 @@
 
 
 
-.header{position: absolute;top: 0;height: 110px;width: 100%;background: #fff;border-bottom: 1px solid #ddd;}
+.header{height: 110px;width: 100%;background: #fff;border-bottom: 1px solid #ddd;}
 .header .logo{width: 60%;float: left;}
 .header .logo a{display: block;background: url(../img/logo.png) no-repeat;width: 297px;height: 81px;}
 .header .wellcome{float: right;line-height: 110px;}
 
 
-.main{background: #edecea;min-height: 550px;margin: 110px 0 115px 0;*margin-top: 160px;}
+.main{background: #edecea;min-height: 550px;}
 .main .container{background: url(../img/login.jpg) no-repeat;height: 550px;}
 .main .wrap{width: 400px;float: right;background: #fff;margin-top: 15%;border-radius: 8px;}
 .main .wrap .box-login{padding:15px 15px; }
