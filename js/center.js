@@ -53,4 +53,17 @@
 		$assnMod.eq(itemNum).removeClass('hide').siblings($teamMod).addClass('hide');
 	});
 
+	//企业信息弹窗
+	$(".main .content .company.item .wrap .header a").click(function(event) {
+		$(this).parent().parent().find(".modal.parent").show();
+	});
+	$(".main .content .company.item .wrap .modal .form-header i").click(function(event) {
+		$(this).parent().parent().parent().hide();
+	});
+
+	//企业信息弹窗2
+	$(".tab-item .info-wapper a.change").click(function(event) {
+		$(this).parent().find(".modal.child").show();
+	});
+
 }());

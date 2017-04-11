@@ -1,6 +1,6 @@
 body,html{height: 100%;}
 .col-sm-8{width: 66.66666666%;float: left;}
-.btn-primary{width: 210px;height: 44px;font-size: 16px;position: relative;left: 30%;}
+.btn-primary{/* width: 210px;height: 44px;font-size: 16px;position: relative;left: 30%; */}
 
 body{background: #edecea;}
 .help-block{display: block;}
